@@ -1,4 +1,13 @@
 <?php
+function header_index(){
+echo <<< EOT
+		<meta charset="utf-8">
+
+		<title>Mira & Vota</title>
+		<link rel="stylesheet" href="{$myv_host}css/kontext.css">
+		<link rel="stylesheet" href="{$myv_host}css/demo.css">
+EOT;
+}
 function header_partidos(){
 echo <<< EOT
         <meta charset="utf-8">
