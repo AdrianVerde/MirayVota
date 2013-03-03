@@ -3,7 +3,7 @@ require_once('./headers.php');
 require_once('./navs.php');
 require_once('./contents.php');
 require_once('./footers.php');
-$cpe_host="http://mirayvota.com/";
+$myv_host="http://mirayvota.com/";
 
 function get_header(){
 //lol at the name of the function xD
