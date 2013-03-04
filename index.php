@@ -3,7 +3,13 @@ require_once('./headers.php');
 require_once('./navs.php');
 require_once('./contents.php');
 require_once('./footers.php');
-$myv_host="http://mirayvota.com/";
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+if (false !== strpos($url,'mirayvota.com')) {
+    $myv_host="http://mirayvota.com/";
+} else {
+    $myv_host="http://localhost/www/mirayvota/";
+}
 
 function get_header(){
 //lol at the name of the function xD
@@ -49,7 +55,7 @@ switch ($_GET['a']) {
 	default:
        echo "algo raro y extraño ha ocurrido...";
 		}}else{
-		/* get_index_header(); */}
+		header_index();}
 }
 		
 function nav(){
@@ -96,7 +102,7 @@ switch ($_GET['a']) {
 	default:
        echo "algo raro y extraño ha ocurrido...";
 		}}else{
-		/* get_index_header(); */}
+		nav_index();}
 		}
 
 //El contenido se muestra con la función content() que llama contenidos ubicados en "contents.php"
@@ -143,9 +149,7 @@ switch ($_GET['a']) {
 	default:
        echo "algo raro y extraño ha ocurrido...";
 		}}else{
-		if (!isset($critical_error)){
-		index_scripts_footer();}else{
-		echo $critical_error_alert;}
+		content_index();
 		}
 }
 
@@ -192,9 +196,7 @@ switch ($_GET['a']) {
 	default:
        echo "algo raro y extraño ha ocurrido...";
 		}}else{
-		if (!isset($critical_error)){
-		index_scripts_footer();}else{
-		echo $critical_error_alert;}
+		footer_index();
 		}
 }
 ?>

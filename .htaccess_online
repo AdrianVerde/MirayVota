@@ -3,13 +3,13 @@ RewriteEngine On
 
 AddDefaultCharset utf-8
 
-#RewriteRule ([^/]+/.*/$) /www/mirayvota/?magic=%{REQUEST_URI} [QSA,L]
+#RewriteRule ([^/]+/.*/$) mirayvota.com/?magic=%{REQUEST_URI} [QSA,L]
 
-#RewriteRule ^(.*)/(.*)$ /www/mirayvota/?magic=$1&magic2=$2 [L]
+#RewriteRule ^(.*)/(.*)$ mirayvota.com/?magic=$1&magic2=$2 [L]
 #2 variables
-Rewriterule ^(.*)/(.*)/$ /www/mirayvota/?a=$1&b=$2 [L]
+Rewriterule ^(.*)/(.*)/$ /?a=$1&b=$2 [L]
 #1 variable
-Rewriterule ^(.*)/$ /www/mirayvota/?a=$1 [L]
+Rewriterule ^(.*)/$ /?a=$1 [L]
 
 #RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{HTTPS}s ^on(s)|off

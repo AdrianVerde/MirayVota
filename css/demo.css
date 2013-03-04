@@ -59,7 +59,7 @@ body {
 	margin: 0;
 }
 
-.layer.one {
+/* .layer.one {
 	background: #dc6c5f;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .layer.three {
 	background: #64b9d2;
-}
+} */
 
 .bullets {
 	position: absolute;

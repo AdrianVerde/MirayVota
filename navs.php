@@ -1,6 +1,6 @@
 <?php
 function nav_index(){
-echo <<< EOT
+/* echo <<< EOT
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -24,7 +24,7 @@ echo <<< EOT
                 </div>
             </div>
         </div>
-EOT;
+EOT; */
 }
 function nav_partidos(){
 echo <<< EOT
