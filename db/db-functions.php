@@ -2,29 +2,29 @@
         require_once(__DIR__ . "/../config/db-config.php");
 
         function getParties() {
-                $query = "SELECT * FROM Parties;";
-                return getArrayFromSql($query);
+       	       return getObject("Parties");
         }
-        
+
         function getPromises() {
-        	       $query = "SELECT * FROM Promises;";
-        	       return getArrayFromSql($query);
+       	       return getObject("Promises");
         }
-        
+
         function getLists() {
-        	       $query = "SELECT * FROM Lists;";
-        	       return getArrayFromSql($query);
+       	       return getObject("Lists");
         }
 
         function getCandidates() {
-        	       $query = "SELECT * FROM Candidates;";
-        	       return getArrayFromSql($query);
+       	       return getObject("Candidates");
         }
 
         function getTopics() {
-        	       $query = "SELECT * FROM Topics;";
-        	       return getArrayFromSql($query);
+       	       return getObject("Topics");
         }
+
+	function getObject($objectName) {
+		$query = "SELECT * FROM $objectName;";
+		return getArrayFromSql($query);
+	}
 
         function getParty($partyId) {
         	       if (is_numeric($partyId)) {
