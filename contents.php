@@ -8,7 +8,7 @@ echo <<< EOT
 <center>
 <!--  Carousel - consult the Twitter Bootstrap docs at
       http://twitter.github.com/bootstrap/javascript.html#carousel -->
-<div id="this-carousel-id" class="carousel slide presentation"><!-- class of slide for animation -->
+<div id="this-carousel-id" class="carousel slide carousel-fade presentation"><!-- class of slide for animation -->
   <div class="carousel-inner">
 <div class="item active"><!-- class of active since it's the first item -->
       <img src="{$myv_host}img/p/mirayvota_Page_01.jpg" alt="" />
