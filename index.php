@@ -12,79 +12,72 @@ if (false !== strpos($url,'mirayvota.com')) {
 }
 
 function get_header(){
-//lol at the name of the function xD
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
-		//Login page
+		//Lista de partidos ordenada por número de votos de forma predeterminada
 		header_partidos();
         break;
 	case "promesas":
-		//registry page
+		//Lista de promesas (topics)
 		header_promesas();
         break;
 	case "programas":
-		//registry page
+		//Lista de programas electorales
 		header_programas();
         break;
 	case "graficas":
-		//registry page
+		//Gráficas comparativas, herramienta inspirada en Google Trends
 		header_graficas();
         break;
 	case "about":
-		//registry page
+		//Información sobre los algoritmos que utilizamos para determinar los valores de las variables
 		header_about();
         break;
-	case "casting":
-		//Casting definer for permalinks
-		if(isset($_GET['b'])){echo "Casting en cuestión";}else{$_GET['b'] = null;};
-        break;
-	case "details":
-		//Complete registration
-		reg_header();
+	case "buscar":
+		//Herramienta de búsqueda
+		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
 	case "logout":
 		//Log Out
-		/* setcookie("id", "x", 1);
-		setcookie("sexyhash", "hashyeah", 1); */
+		//Just if someday we plan to let users log in
         break;
-	case 3:
+	case "admin":
 		//Admin
-        echo "Hola Admin";
+        echo "Admin Panel";
         break;
 	default:
-       echo "algo raro y extraño ha ocurrido...";
+       echo "404... lol";
 		}}else{
 		header_index();}
 }
 		
 function nav(){
-//lol at the name of the function xD
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
-		//Login page
+		//Lista de partidos ordenada por número de votos de forma predeterminada
 		nav_partidos();
         break;
 	case "promesas":
-		//registry page
+		//Lista de promesas (topics)
 		nav_promesas();
         break;
 	case "programas":
-		//registry page
+		//Lista de programas electorales
 		nav_programas();
         break;
 	case "graficas":
-		//registry page
+		//Gráficas comparativas, herramienta inspirada en Google Trends
 		nav_graficas();
         break;
 	case "about":
-		//registry page
+		//Información sobre los algoritmos que utilizamos para determinar los valores de las variables
 		nav_about();
         break;
-	case "casting":
-		//Casting definer for permalinks
-		if(isset($_GET['b'])){echo "Casting en cuestión";}else{$_GET['b'] = null;};
+	case "buscar":
+		//Herramienta de búsqueda
+		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
 	case "details":
 		//Complete registration
@@ -92,12 +85,11 @@ switch ($_GET['a']) {
         break;
 	case "logout":
 		//Log Out
-		/* setcookie("id", "x", 1);
-		setcookie("sexyhash", "hashyeah", 1); */
+		//Just if someday we plan to let users log in
         break;
-	case 3:
+	case "admin":
 		//Admin
-        echo "Hola Admin";
+        echo "Admin Panel";
         break;
 	default:
        echo "algo raro y extraño ha ocurrido...";
@@ -111,28 +103,28 @@ global $critical_error, $critical_error_alert;
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
-		//Normal User
+		//Lista de partidos ordenada por número de votos de forma predeterminada
 		content_partidos();
         break;
 	case "promesas":
-		//Moderator
+		//Lista de promesas (topics)
 		content_promesas();
         break;
 	case "programas":
-		//registry page
+		//Lista de programas electorales
 		content_programas();
         break;
 	case "graficas":
-		//registry page
+		//Gráficas comparativas, herramienta inspirada en Google Trends
 		content_graficas();
         break;
 	case "about":
-		//registry page
+		//Información sobre los algoritmos que utilizamos para determinar los valores de las variables
 		content_about();
         break;
-	case "casting":
-		//Moderator
-		if(isset($_GET['b'])){echo "Casting en cuestión";}else{$_GET['b'] = null;};
+	case "buscar":
+		//Herramienta de búsqueda
+		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
 	case "details":
 		//Complete registration
@@ -140,11 +132,11 @@ switch ($_GET['a']) {
         break;
 	case "logout":
 		//Log Out
-		
+		//Just if someday we plan to let users log in
         break;
-	case 3:
+	case "admin":
 		//Admin
-        echo "Hola Admin";
+        echo "Admin Panel";
         break;
 	default:
        echo "algo raro y extraño ha ocurrido...";
@@ -158,28 +150,28 @@ global $critical_error, $critical_error_alert;
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
-		//Normal User
+		//Lista de partidos ordenada por número de votos de forma predeterminada
 		footer_partidos();
         break;
 	case "promesas":
-		//Moderator
+		//Lista de promesas (topics)
 		footer_promesas();
         break;
 	case "programas":
-		//registry page
+		//Lista de programas electorales
 		footer_programas();
         break;
 	case "graficas":
-		//registry page
+		//Gráficas comparativas, herramienta inspirada en Google Trends
 		footer_graficas();
         break;
 	case "about":
-		//registry page
+		//Información sobre los algoritmos que utilizamos para determinar los valores de las variables
 		footer_about();
         break;
-	case "casting":
-		//Moderator
-		if(isset($_GET['b'])){echo "Casting en cuestión";}else{$_GET['b'] = null;};
+	case "buscar":
+		//Herramienta de búsqueda
+		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
 	case "details":
 		//Complete registration
@@ -187,11 +179,11 @@ switch ($_GET['a']) {
         break;
 	case "logout":
 		//Log Out
-		
+		//Just if someday we plan to let users log in
         break;
-	case 3:
+	case "admin":
 		//Admin
-        echo "Hola Admin";
+        echo "Admin Panel";
         break;
 	default:
        echo "algo raro y extraño ha ocurrido...";
