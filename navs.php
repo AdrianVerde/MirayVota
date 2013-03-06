@@ -21,7 +21,7 @@ echo <<< EOT
 							<li><a href="{$myv_host}promesas">Promesas</a></li>
                         </ul>
 						<ul class="nav pull-right">
-                        <li><a href="about.php">About</a></li>
+                        <li><a href="{$myv_host}about">About</a></li>
 						</ul>
                     </div><!--/.nav-collapse -->
                 </div>
