@@ -25,6 +25,24 @@ padding: 0 85px 0 85px;
   z-index: 3;
 }
 
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom:1;              /* for IE7*/
+
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
+.myvlogo{display:block;background-image:url(../img/logo.png);background-repeat:no-repeat;background-position: 0px 0px;width:211px;height:34px;margin-bottom:50px;margin-top:25px;/* margin-top:-4px;margin-right:-2px; */text-indent:-9999px;}
+
+.piclink{background-repeat:no-repeat;background-position: 0px 0px;width:69px;height:69px;/* margin-bottom:50px;margin-top:25px; *//* margin-top:-4px;margin-right:-2px; */text-indent:-9999px;}
+
+.partidospic{background-image:url(../img/button.png);}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */

@@ -41,9 +41,10 @@ echo <<< EOT
 EOT;
 }
 function content_partidos(){
-/* global $dc_host; */
+global $myv_host;
 echo <<< EOT
 <div class="container">
+
 <table class="table table-striped table-condensed">
 	  <thead>
       <tr>

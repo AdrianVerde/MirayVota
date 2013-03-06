@@ -33,7 +33,7 @@ echo <<< EOT
         <link rel="stylesheet" href="{$myv_host}css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 60px;
+                padding-top: 5px;
                 padding-bottom: 40px;
             }
         </style>
