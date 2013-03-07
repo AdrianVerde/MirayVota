@@ -41,6 +41,89 @@ echo <<< EOT
 EOT;
 }
 function content_partidos(){
+global $myv_host;
+echo <<< EOT
+<div class="container">
+
+<center>
+<!--  Carousel - consult the Twitter Bootstrap docs at
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide carousel-fade presentation" style="max-width:555px;"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+<div class="item active"><!-- class of active since it's the first item -->
+      <img src="{$myv_host}img/p/mirayvota_Page_01.jpg" alt="" />
+      <!-- <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div> -->
+    </div>
+EOT;
+for ($i = 2; $i <= 23; $i++) {
+echo "<div class=\"item\">
+      <img src=\"{$myv_host}img/p/mirayvota_Page_".substr("00" . $i, -2).".jpg\" alt=\"\" />
+    </div>";
+	}
+echo <<< EOT
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+</center>
+
+        </div> <!-- /container -->
+EOT;
+}
+function content_promesas(){
+global $myv_host;
+echo <<< EOT
+<div class="container">
+
+<table class="table table-striped table-condensed">
+	  <thead>
+      <tr>
+          <th>Partido</th>
+          <th>Promesa</th>
+          <th>Anunciada</th>
+          <th>Estado</th>                                          
+      </tr>
+  </thead>   
+  <tbody>
+    <tr>
+        <td>PP</td>
+        <td>No subir el IVA</td>
+        <td>2011/05/06</td>
+        <td><span class="label label-important">Incumplida</span>
+        </td>                                       
+    </tr>
+    <tr>
+        <td>PSOE</td>
+        <td>Permitir el aborto</td>
+        <td>2009/07/09</td>
+        <td><span class="label label-warning" rel="tooltip" title="Sólo si lo autoriza pikachu">Pendiente</span>
+        </td>                                         
+    </tr>
+	<tr>
+        <td>IU</td>
+        <td>Legalizar la Marihuana</td>
+        <td>2005/07/09</td>
+        <td><span class="label label-success" rel="tooltip" title="They ♥ weed">Cumplida</span>
+        </td>                                         
+    </tr>  
+	<tr>
+        <td>UPyD</td>
+        <td>Presidir españa</td>
+        <td>2011/07/09</td>
+        <td><span class="label label-warning" rel="tooltip" title="Sin éxito">Lo intentaron...</span>
+        </td>                                         
+    </tr>
+  </tbody>
+</table>
+
+        </div> <!-- /container -->
+EOT;
+}
+function content_typical(){
 /* global $dc_host; */
 echo <<< EOT
 <div class="container">
@@ -70,12 +153,6 @@ echo <<< EOT
                     <p><a class="btn" href="#">View details &raquo;</a></p>
                 </div>
             </div>
-
-            <hr>
-
-	<footer>
-	<p>&copy; Mira & Vota 2013</p>
-	</footer>
 
         </div> <!-- /container -->
 EOT;
