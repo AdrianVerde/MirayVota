@@ -17,6 +17,21 @@ echo <<< EOT
         <script src="{$myv_host}js/main.js"></script>
 EOT;
 }
+/* <center>
+<div class="row">
+  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PSOElogo.jpg" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PPlogo.jpg" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/iuLogo.jpg" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/upydLogo.jpg" /></div>
+</div>
+<br />
+	<div class="row">
+	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/upydLogo.jpg" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/iuLogo.jpg" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PPlogo.jpg" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PSOElogo.jpg" /></div>  
+</div>
+</center> */
 function footer_partidos(){
 global $myv_host;
 echo <<< EOT
@@ -28,7 +43,6 @@ echo <<< EOT
                 <li><a class="piclink graficaspic" href="{$myv_host}graficas">Gráficas</a></li>
 				<li class="last"><a class="piclink aboutpic" href="{$myv_host}about">About</a></li>
   </ul>
-  
     <hr>
 	<footer>
 	<p>&copy; Mira & Vota 2013</p>
