@@ -14,5 +14,5 @@
 	* - db-v2.sql
 	* - db-v3.sql
 	*/
-	$dbVersion = 3;
+	$dbVersion = 4;
 ?>

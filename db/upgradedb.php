@@ -10,9 +10,6 @@
 	/* Busca la versión de la base de datos instalada */
 	$dbInstalledVersion = getCurrentVersion();
 
-	//echo "Versión de la base de datos: " . $dbInstalledVersion . ". ";
-	//echo "Versión del código: " . $dbVersion . ".";
-
 	/* Si la versión de la base de datos es menor que la del código, actualiza */
 	if ($dbVersion > $dbInstalledVersion) {
 		for ($i = $dbInstalledVersion + 1; $i <= $dbVersion; $i++) {
@@ -60,7 +57,7 @@
 	function upgradeTo($version) {
                 $mysqli = tryConnect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                 $filename = "db-v" . $version . ".sql";
-                $script = file_get_contents(__DIR__ . "/" . $filename);
+                $script = file_get_contents(__DIR__ . "/upgrades/" . $filename);
                 $mysqli->multi_query($script);
 		$mysqli->close();
 
