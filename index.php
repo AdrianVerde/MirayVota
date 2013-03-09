@@ -1,5 +1,4 @@
 <?php
-require_once('./db/upgradedb.php');
 require_once('./headers.php');
 require_once('./navs.php');
 require_once('./contents.php');
