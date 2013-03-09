@@ -1,4 +1,4 @@
-body{background-image:url(../img/patron.png);background-repeat:repeat;background-position: 0px 0px;}
+body{background-image:url(../img/patron.png);background-repeat:repeat;background-position:0;}
 
 .presentation{
 padding: 0 85px 0 85px;
@@ -74,7 +74,7 @@ border:0;
 /* border-color: #eee #eee #ddd; */
 }
 
-.myvlogo{display:block;background-image:url(../img/logo.png);background-repeat:no-repeat;background-position: 0px 0px;width:211px;height:34px;margin-bottom:30px;margin-top:25px;/* margin-top:-4px;margin-right:-2px; */text-indent:-9999px;}
+.myvlogo{display:block;background-image:url(../img/logo.png);background-repeat:no-repeat;background-position:0;width:211px;height:34px;margin-bottom:30px;margin-top:25px;/* margin-top:-4px;margin-right:-2px; */text-indent:-9999px;}
 
 .piclink{background-repeat:no-repeat;background-position: 0px 0px;width:114px;height:86px;/* margin-bottom:50px;margin-top:25px; *//* margin-top:-4px;margin-right:-2px; */text-indent:-9999px;}
 

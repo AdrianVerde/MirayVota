@@ -51,7 +51,7 @@ echo <<< EOT
 <div id="this-carousel-id" class="carousel slide carousel-fade presentation" style="max-width:555px;"><!-- class of slide for animation -->
   <div class="carousel-inner">
 <div class="item active"><!-- class of active since it's the first item -->
-      <img src="{$myv_host}img/p/mirayvota_Page_01.jpg" alt="" />
+      <img src="http://mirayvota.com/img/p/mirayvota_Page_01.jpg" alt="" />
       <!-- <div class="carousel-caption">
         <p>Caption text here</p>
       </div> -->
@@ -59,7 +59,7 @@ echo <<< EOT
 EOT;
 for ($i = 2; $i <= 23; $i++) {
 echo "<div class=\"item\">
-      <img src=\"{$myv_host}img/p/mirayvota_Page_".substr("00" . $i, -2).".jpg\" alt=\"\" />
+      <img src=\"http://mirayvota.com/img/p/mirayvota_Page_".substr("00" . $i, -2).".jpg\" alt=\"\" />
     </div>";
 	}
 echo <<< EOT

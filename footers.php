@@ -17,24 +17,25 @@ echo <<< EOT
         <script src="{$myv_host}js/main.js"></script>
 EOT;
 }
-/* <center>
-<div class="row">
-  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PSOElogo.jpg" /></div>
-  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PPlogo.jpg" /></div>
-  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/iuLogo.jpg" /></div>
-  <div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/upydLogo.jpg" /></div>
-</div>
-<br />
-	<div class="row">
-	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/upydLogo.jpg" /></div>
-	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/iuLogo.jpg" /></div>
-	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PPlogo.jpg" /></div>
-	<div class="span1"><img src="{$myv_host}img/logos_partidos/congreso/PSOElogo.jpg" /></div>  
-</div>
-</center> */
+
 function footer_partidos(){
 global $myv_host;
 echo <<< EOT
+<center>
+<div class="row">
+  <div class="span1"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
+  <div class="span1"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
+</div>
+<br />
+	<div class="row">
+	<div class="span1"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
+	<div class="span1"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>  
+</div>
+</center>
 <div class="container">
   <ul class="nav nav-tabs">
     <li class="active"><a class="piclink partidospic" href="{$myv_host}partidos">Partidos</a></li>
