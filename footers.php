@@ -18,10 +18,7 @@ echo <<< EOT
 EOT;
 }
 
-function footer_partidos(){
-global $myv_host;
-echo <<< EOT
-<center>
+/* <center>
 <div class="row">
   <div class="span1"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>
   <div class="span1"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
@@ -35,7 +32,11 @@ echo <<< EOT
 	<div class="span1"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
 	<div class="span1"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>  
 </div>
-</center>
+</center> */
+
+function footer_partidos(){
+global $myv_host;
+echo <<< EOT
 <div class="container">
   <ul class="nav nav-tabs">
     <li class="active"><a class="piclink partidospic" href="{$myv_host}partidos">Partidos</a></li>
