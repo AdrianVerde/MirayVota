@@ -7,6 +7,8 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 if (false !== strpos($url,'mirayvota.com')) {
     $myv_host="http://mirayvota.com/";
+} else if (false !== strpos($url,'beta.mirayvota.com')) {
+    $myv_host="http://beta.mirayvota.com/";
 } else {
     $myv_host="http://localhost/www/mirayvota/";
 }

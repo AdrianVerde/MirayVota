@@ -2,13 +2,11 @@
 function content_index(){
 global $myv_host;
 echo <<< EOT
-
 <div class="container">
-
 <center>
 <!--  Carousel - consult the Twitter Bootstrap docs at
       http://twitter.github.com/bootstrap/javascript.html#carousel -->
-<div id="this-carousel-id" class="carousel slide carousel-fade presentation"><!-- class of slide for animation -->
+<div id="this-carousel-id" class="carousel slide carousel-fade presentation" style="max-width:555px;"><!-- class of slide for animation -->
   <div class="carousel-inner">
 <div class="item active"><!-- class of active since it's the first item -->
       <img src="{$myv_host}img/p/mirayvota_Page_01.jpg" alt="" />
@@ -17,7 +15,7 @@ echo <<< EOT
       </div> -->
     </div>
 EOT;
-for ($i = 2; $i <= 23; $i++) {
+for ($i = 2; $i <= 14; $i++) {
 echo "<div class=\"item\">
       <img src=\"{$myv_host}img/p/mirayvota_Page_".substr("00" . $i, -2).".jpg\" alt=\"\" />
     </div>";
@@ -31,12 +29,6 @@ echo <<< EOT
 </div><!-- /.carousel -->
 </center>
 
-            <hr>
-
-	<footer>
-	<p>&copy; Mira & Vota 2013</p>
-	</footer>
-
         </div> <!-- /container -->
 EOT;
 }
@@ -44,32 +36,24 @@ function content_partidos(){
 global $myv_host;
 echo <<< EOT
 <div class="container">
-<center>
-<!--  Carousel - consult the Twitter Bootstrap docs at
-      http://twitter.github.com/bootstrap/javascript.html#carousel -->
-<div id="this-carousel-id" class="carousel slide carousel-fade presentation" style="max-width:555px;"><!-- class of slide for animation -->
-  <div class="carousel-inner">
-<div class="item active"><!-- class of active since it's the first item -->
-      <img src="http://mirayvota.com/img/p/mirayvota_Page_01.jpg" alt="" />
-      <!-- <div class="carousel-caption">
-        <p>Caption text here</p>
-      </div> -->
-    </div>
-EOT;
-for ($i = 2; $i <= 23; $i++) {
-echo "<div class=\"item\">
-      <img src=\"http://mirayvota.com/img/p/mirayvota_Page_".substr("00" . $i, -2).".jpg\" alt=\"\" />
-    </div>";
-	}
-echo <<< EOT
-  </div><!-- /.carousel-inner -->
-  <!--  Next and Previous controls below
-        href values must reference the id for this carousel -->
-    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
-</center>
+<div class="span12">
+<div class="row">
+  
+  <div class="span1 aparty""><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>
+  <div class="span1 aparty"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
+  <div class="span1 aparty"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
+  <div class="span1 aparty"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
+</div>
+<br />
+	<div class="row">
+	<div class="span1 aparty"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
+	<div class="span1 aparty"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
+	<div class="span1 aparty"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
+	<div class="span1 aparty"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>  
+</div>
 
+</div>
+</div>
         </div> <!-- /container -->
 EOT;
 }
@@ -123,18 +107,19 @@ echo <<< EOT
 EOT;
 }
 
+/* <legend><center><img src="{$myv_host}img/ojoysobre.png" /></center></legend> */
 function content_about(){
-/* global $myv_host; */
+global $myv_host;
 echo <<< EOT
 <div class="container">
 
 <div id="about" class="row">
     <div class="span6">
-      <legend>Imagen ojo -> Mail (transparencia)</legend>
+      <center><img src="{$myv_host}img/ojoysobre.png" /></center>
       Según la mecánica cuántica, un material será transparente a cierta longitud de onda cuando en su esquema de niveles de energía no haya ninguna diferencia de energía que corresponda con esa longitud de onda. Así, el aire y el vidrio son transparentes, porque en sus esquemas de niveles de energía (o bandas de energía, respectivamente) no cabe ninguna diferencia de energía del orden de la luz visible. Sin embargo, sí que pueden absorber, por ejemplo, parte de la radiación infrarroja (las moléculas de agua y de dióxido de carbono absorben en el infrarrojo) o del ultravioleta (el vidrio bloquea parte del espectro ultravioleta).
     </div>
     <div class="span6">
-        <legend>Imagen pizarra (algoritmos)</legend>
+        <center><img src="{$myv_host}img/pizarra.png" /></center>
 			En matemáticas, lógica, ciencias de la computación y disciplinas relacionadas, un algoritmo (del griego y latín, dixit algorithmus y este a su vez del matemático persa Al-Juarismi1 ) es un conjunto preescrito de instrucciones o reglas bien definidas, ordenadas y finitas que permite realizar una actividad mediante pasos sucesivos que no generen dudas a quien deba realizar dicha actividad.2 Dados un estado inicial y una entrada, siguiendo los pasos sucesivos se llega a un estado final y se obtiene una solución. Los algoritmos son el objeto de estudio de la algoritmia.
         </div>
     </div>
