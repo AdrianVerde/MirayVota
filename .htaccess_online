@@ -3,9 +3,6 @@ RewriteEngine On
 
 AddDefaultCharset utf-8
 
-#RewriteRule ([^/]+/.*/$) mirayvota.com/?magic=%{REQUEST_URI} [QSA,L]
-
-#RewriteRule ^(.*)/(.*)$ mirayvota.com/?magic=$1&magic2=$2 [L]
 #2 variables
 Rewriterule ^(.*)/(.*)/$ /?a=$1&b=$2 [L]
 #1 variable
