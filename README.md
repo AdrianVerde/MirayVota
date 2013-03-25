@@ -12,7 +12,7 @@ Instalación
 -----------
 
 Para empezar a usar el proyecto, debes "decirle" dónde tendrás la base de datos. Para hacerlo, basta
-con copiar el fichero db-config.sample.php con el nombre db-config.php, en la tabla config y
+con copiar el fichero config.sample.php con el nombre config.php, en la tabla config y
 especificar ahí los datos de conexión:
 
 ```php

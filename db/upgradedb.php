@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../config/db-config.php");
+	require_once(__DIR__ . "/../config/config.php");
 	require_once(__DIR__ . "/db-version.php");
 
 	header('Content-Type: text/html; charset=UTF-8');
