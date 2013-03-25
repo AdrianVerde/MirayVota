@@ -34,7 +34,7 @@ EOT;
 }
 
 function content_partidos(){
-	include_once("content-parties.php");
+	include_once("contents/parties.php");
 }
 
 function content_promesas(){
