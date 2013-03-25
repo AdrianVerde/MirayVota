@@ -5,13 +5,7 @@ require_once('./contents.php');
 require_once('./footers.php');
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
-if (false !== strpos($url,'beta.mirayvota.com')) {
-    $myv_host="http://beta.mirayvota.com/";
-} else if (false !== strpos($url,'mirayvota.com')) {
-    $myv_host="http://mirayvota.com/";
-} else {
-    $myv_host="http://localhost/www/mirayvota/";
-}
+$myv_host = URLBASE;
 
 function get_header(){
 if(isset($_GET['a'])){
@@ -53,7 +47,7 @@ switch ($_GET['a']) {
 		}}else{
 		header_index();}
 }
-		
+
 function nav(){
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
@@ -206,6 +200,6 @@ switch ($_GET['a']) {
 <?php nav(); ?>
 <?php content(); ?>
 <?php footer(); ?>
-        
+
     </body>
 </html>

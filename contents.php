@@ -32,31 +32,11 @@ echo <<< EOT
         </div> <!-- /container -->
 EOT;
 }
-function content_partidos(){
-global $myv_host;
-echo <<< EOT
-<div class="container">
-<div class="span12">
-<div class="row">
-  
-  <div class="span1 aparty""><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>
-  <div class="span1 aparty"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
-  <div class="span1 aparty"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
-  <div class="span1 aparty"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
-</div>
-<br />
-	<div class="row">
-	<div class="span1 aparty"><img src="{$myv_host}img/logos/upyd-200x200.png" /></div>
-	<div class="span1 aparty"><img src="{$myv_host}img/logos/iu-200x200.png" /></div>
-	<div class="span1 aparty"><img src="{$myv_host}img/logos/pp-200x200.png" /></div>
-	<div class="span1 aparty"><img src="{$myv_host}img/logos/psoe-200x200.png" /></div>  
-</div>
 
-</div>
-</div>
-        </div> <!-- /container -->
-EOT;
+function content_partidos(){
+	include_once("content-parties.php");
 }
+
 function content_promesas(){
 global $myv_host;
 echo <<< EOT
