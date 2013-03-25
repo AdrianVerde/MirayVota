@@ -1,8 +1,3 @@
-<?php
-	require_once(__DIR__ . "/db/db-functions.php");
-        header('Content-Type: text/html; charset=UTF-8');
-?>
-
 <div id="parties">
 
 <?php foreach (getParties() as $Party) { ?>

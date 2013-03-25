@@ -5,6 +5,10 @@ require_once('./headers.php');
 require_once('./navs.php');
 require_once('./contents.php');
 require_once('./footers.php');
+
+header('Content-Type: text/html; charset=UTF-8');
+
+
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 $myv_host = URLBASE;

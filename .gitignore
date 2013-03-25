@@ -163,6 +163,5 @@ pip-log.txt
 .DS_Store
 
 #MirayVota
-config/db-config.php
 config/config.php
 *~
