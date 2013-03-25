@@ -21,6 +21,8 @@ especificar ahí los datos de conexión:
 	define("DB_NAME", "database");
 	define("DB_USER", "user");
 	define("DB_PASSWORD", "password");
+
+	define("URLBASE", "//host/");
 ?>
 ```
 
