@@ -1,4 +1,6 @@
 <?php
+require_once('db/db-functions.php');
+
 require_once('./headers.php');
 require_once('./navs.php');
 require_once('./contents.php');
