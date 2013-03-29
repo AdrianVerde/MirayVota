@@ -54,7 +54,7 @@ Tratamos, en todo momento, de basarnos en estándares accesibles. Entre otros, h
 
 * [Bootstrap 2.3.1](http://twitter.github.com/bootstrap/)
 * [Highcharts 2.3.5](http://www.highcharts.com)
-* [Image Editor](http://www.kiwwito.com/proyecto/image-editor)
+* [WideImage 11.02.19](http://wideimage.sourceforge.net/)
 
 Estructura de ficheros
 ----------------------
