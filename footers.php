@@ -133,4 +133,8 @@ echo <<< EOT
 	</script>
 EOT;
 }
+
+function footer_conversor(){
+
+}
 ?>

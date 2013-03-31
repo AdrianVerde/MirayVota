@@ -8,9 +8,6 @@ require_once('./footers.php');
 
 header('Content-Type: text/html; charset=UTF-8');
 
-
-$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-
 $myv_host = URLBASE;
 
 function get_header(){
@@ -48,6 +45,10 @@ switch ($_GET['a']) {
 		//Admin
         echo "Admin Panel";
         break;
+	case "conversor":
+		//Conversor de imágenes
+        header_conversor();
+        break;
 	default:
        echo "404... lol";
 		}}else{
@@ -81,10 +82,6 @@ switch ($_GET['a']) {
 		//Herramienta de búsqueda
 		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
-	case "details":
-		//Complete registration
-		reg_header();
-        break;
 	case "logout":
 		//Log Out
 		//Just if someday we plan to let users log in
@@ -93,15 +90,19 @@ switch ($_GET['a']) {
 		//Admin
         echo "Admin Panel";
         break;
+	case "conversor":
+		//Conversor de imágenes
+        nav_conversor();
+		break;
 	default:
-       echo "algo raro y extraño ha ocurrido...";
+       echo "algo raro y extraño ha ocurrido en el selector de nav...";
 		}}else{
 		nav_index();}
 		}
 
 //El contenido se muestra con la función content() que llama contenidos ubicados en "contents.php"
 function content(){
-global $critical_error, $critical_error_alert;
+global $banana;
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
@@ -128,10 +129,6 @@ switch ($_GET['a']) {
 		//Herramienta de búsqueda
 		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
-	case "details":
-		//Complete registration
-		details_content();
-        break;
 	case "logout":
 		//Log Out
 		//Just if someday we plan to let users log in
@@ -140,15 +137,19 @@ switch ($_GET['a']) {
 		//Admin
         echo "Admin Panel";
         break;
+	case "conversor":
+		//Conversor de imágenes
+        content_conversor();
+		break;
 	default:
-       echo "algo raro y extraño ha ocurrido...";
+       echo "algo raro y extraño ha ocurrido en el selector de content...";
 		}}else{
 		content_index();
 		}
 }
 
 function footer(){
-global $critical_error, $critical_error_alert;
+global $adrian_is_sexy;
 if(isset($_GET['a'])){
 switch ($_GET['a']) {
     case "partidos":
@@ -175,10 +176,6 @@ switch ($_GET['a']) {
 		//Herramienta de búsqueda
 		if(isset($_GET['b'])){echo "Query de búsqueda";}else{$_GET['b'] = null;};
         break;
-	case "details":
-		//Complete registration
-		details_content();
-        break;
 	case "logout":
 		//Log Out
 		//Just if someday we plan to let users log in
@@ -187,12 +184,29 @@ switch ($_GET['a']) {
 		//Admin
         echo "Admin Panel";
         break;
+	case "conversor":
+		//Conversor de imágenes
+        footer_conversor();
+		break;
 	default:
-       echo "algo raro y extraño ha ocurrido...";
+       echo "algo raro y extraño ha ocurrido en el selector de footer...";
 		}}else{
 		footer_index();
 		}
 }
+function just_in_case(){
+if(isset($_GET['a'])){
+switch ($_GET['a']) {
+	case "conversor":
+		//Conversor de imágenes
+        echo "<body onload=\"new uploader('drop', 'status', '/uploader.php', 'list');\">";
+	default:
+       echo "<body>";
+		}}else{
+		echo "<body>";
+		}
+}
+
 ?>
 <!DOCTYPE html>
 <html class="no-js">
@@ -200,9 +214,8 @@ switch ($_GET['a']) {
     <head>
 	<?php get_header();?>
     </head>
-    <body>
-
-
+	<?php just_in_case(); //<-- I hate this function! ?>
+	
 <?php nav(); ?>
 <?php content(); ?>
 <?php footer(); ?>

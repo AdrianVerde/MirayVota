@@ -74,4 +74,8 @@ EOT;
 function header_about(){
 header_partidos();
 }
+
+function header_conversor(){
+	require_once("headers/header_conversor.php");
+}
 ?>

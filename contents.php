@@ -15,6 +15,10 @@ function content_about(){
 	require_once("contents/about.php");
 }
 
+function content_conversor(){
+	require_once("contents/conversor.php");
+}
+
 function content_typical(){
 /* global $myv_host; */
 echo <<< EOT

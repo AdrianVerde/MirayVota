@@ -50,11 +50,12 @@ script _db-v{version}.sql_ que corresponda (sustituyendo {version}) por la versi
 Tecnologías
 -----------
 
-Tratamos, en todo momento, de basarnos en estándares accesibles. Entre otros, hemos utilizado:
+Tratamos, en todo momento, de basarnos en tecnologías open source. Entre otros proyectos, hemos utilizado:
 
-* [Bootstrap 2.3.1](http://twitter.github.com/bootstrap/)
-* [Highcharts 2.3.5](http://www.highcharts.com)
-* [WideImage 11.02.19](http://wideimage.sourceforge.net/)
+* [Bootstrap 2.3.1](http://twitter.github.com/bootstrap/) [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0)
+* [Highcharts 2.3.5](http://www.highcharts.com) [Creative Commons Attribution-NonCommercial 3.0 License](http://creativecommons.org/licenses/by-nc/3.0/)
+* [WideImage 11.02.19](http://wideimage.sourceforge.net/) [GNU LGPL 2.1](http://opensource.org/licenses/lgpl-2.1.php)
+* [html5uploader 11.02.19](http://code.google.com/p/html5uploader/) [New BSD License](http://opensource.org/licenses/BSD-3-Clause)
 
 Estructura de ficheros
 ----------------------
