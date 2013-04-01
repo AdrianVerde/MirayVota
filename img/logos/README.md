@@ -14,3 +14,4 @@
 
 - Nombres de archivo -
 * El nombre de archivo se compone siempre de las siglas del partido en minúsculas, seguido del sufijo: -200x200.png
+* El nombre de archivo no contendrá espacios ni tildes ni carácteres que no sean unicode, quién use caractéres que no sean unicode en el nombre de archivo será atacado con lanzamientos de naranjas por parte del resto del equipo
