@@ -1,7 +1,9 @@
 <?php
+require_once('db/db-functions.php');
 require_once('libs/wideimage/WideImage.php');
 // Destination folder for downloaded files
-$upload_folder = './img/uploads';
+$static_host = "../static/mirayvota";
+$upload_folder = $static_host.'/uploads';
 
 // If the browser supports sendAsBinary () can use the array $ _FILES
 if(count($_FILES)>0) {
@@ -29,12 +31,16 @@ if(count($_FILES)>0) {
 	$headers = getallheaders();
 	$headers = array_change_key_case($headers, CASE_UPPER);
 //$content = base64_encode($content);
-$logo = WideImage::load($content);
-$logo_resized = $logo->resize(200, 200);
-$base = WideImage::load('square.png');
-$content = $base->merge($logo_resized, 'center', 'center', 100);
 
 	if(file_put_contents($upload_folder.'/'.$headers['UP-FILENAME'], $content)) {
+		$logo = WideImage::load($content);
+		$logo_resized = $logo->resize(200, 200);
+		$base = WideImage::load('square.png');
+		$content = $base->merge($logo_resized, 'center', 'center', 100);
+		$filename = $headers['UP-FILENAME'];
+		$filename = substr($filename, 0, -3)."png"; 
+		$content->saveToFile($upload_folder.'/'.$filename);
+		/* $content->saveToFile($upload_folder.'/'.$headers['UP-FILENAME']); */
 		echo 'done';
 	}
 	exit();

@@ -79,17 +79,22 @@ function uploader(place, status, targetPHP, show) {
 				}				
 			}
 				
-			// Preview images
-			this.previewNow = function(event) {
-				document.getElementById("lool").innerHTML = "woop woop";
+			function previewer(event){
+			document.getElementById("lool").innerHTML = "woop woop";
 				
 				bin = preview.result;
 				var img = document.createElement("img"); 
 				img.className = 'addedIMG';
 			    img.file = file;   
 			    /* img.src = bin; */
-				img.src = "/img/uploads/"+file.name;
+				var filename = encodeURI(file.name);
+				var fnoext = filename.substr(0, filename.length-3);
+				img.src = staticness+"/uploads/"+fnoext+"png";
 				document.getElementById(show).appendChild(img);
+				}
+			// Preview images
+			this.previewNow = function(event) {
+			setTimeout(function(event) { previewer(); }, 5000);
 			}
 
 		reader = new FileReader();

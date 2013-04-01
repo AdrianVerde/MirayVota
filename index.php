@@ -9,6 +9,7 @@ require_once('./footers.php');
 header('Content-Type: text/html; charset=UTF-8');
 
 $myv_host = URLBASE;
+$static_host = STATIC_HOST;
 
 function get_header(){
 if(isset($_GET['a'])){

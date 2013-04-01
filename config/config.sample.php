@@ -5,4 +5,5 @@
     define("DB_PASSWORD", "password");
 
     define("URLBASE", "//localhost/");
+	define("STATIC_HOST", "//static-localhost/");
 ?>

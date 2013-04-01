@@ -44,4 +44,5 @@
 		height: 100px;
 	}
 	</style>
+	<script whatever="this is a config js file" src="/config/config.js"></script>
 	<script src="/js/html5uploader.js"></script>
