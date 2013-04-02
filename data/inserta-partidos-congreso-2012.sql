@@ -23,7 +23,7 @@ INSERT INTO Parties (name, logo) VALUES ('Partido Pirata', 'img/logos/pirata-200
 INSERT INTO Parties (name, logo) VALUES ('Anticapitalistas', 'img/logos/anticapitalistas-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Unificación Comunista de España', 'img/logos/uce-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Partido Humanista', 'img/logos/ph-200x200.png');
-INSERT INTO Parties (name, logo) VALUES ('España 2000', 'img/logos/españa 2000-200x200.png');
+INSERT INTO Parties (name, logo) VALUES ('España 2000', 'img/logos/espana_2000-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Republicanos', 'img/logos/rps-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Solidaridad y Autogestión Internacionalista', 'img/logos/sain-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Hartos.org', 'img/logos/hartosorg-200x200.png');
