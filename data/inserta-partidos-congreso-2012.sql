@@ -53,11 +53,10 @@ INSERT INTO Parties (name, logo) VALUES ('Unión Regionalista de Castilla y Leó
 INSERT INTO Parties (name, logo) VALUES ('Partido para la Regeneración de la Democracia en España', 'img/logos/prde-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Partido de Internet', 'img/logos/internet-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Partit Republicà d''Esquerra-Republicans', 'img/logos/pre-r-200x200.png');
-INSERT INTO Parties (name, logo) VALUES ('Basta Ya', '');
 INSERT INTO Parties (name, logo) VALUES ('Partido Castellano', 'img/logos/pcas-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Partido Democrático y Constitucional', 'img/logos/pdyc-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Los Verdes - Grupo Verde', 'img/logos/lv-gv-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Higiene Democrática', 'img/logos/hd-200x200.png');
-INSERT INTO Parties (name, logo) VALUES ('Socialistes por Teruel', '');
+INSERT INTO Parties (name, logo) VALUES ('Socialistes por Teruel', 'img/logos/sxt-200x200.png');
 INSERT INTO Parties (name, logo) VALUES ('Derecha Navarra y Española', 'img/logos/dne-200x200.png');
 

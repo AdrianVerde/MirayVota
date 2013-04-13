@@ -31,7 +31,8 @@ if(count($_FILES)>0) {
 	$headers = getallheaders();
 	$headers = array_change_key_case($headers, CASE_UPPER);
 //$content = base64_encode($content);
-
+	/* $failnaim = urldecode($headers['UP-FILENAME']); */
+	
 	if(file_put_contents($upload_folder.'/'.$headers['UP-FILENAME'], $content)) {
 		$logo = WideImage::load($content);
 		$logo_resized = $logo->resize(200, 200);

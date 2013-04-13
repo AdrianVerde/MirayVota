@@ -39,7 +39,7 @@ function uploader(place, status, targetPHP, show) {
 					xhr.sendAsBinary(body); 
 				// Chrome 7 sends data but you must use the base64_decode on the PHP side
 				} else { 
-					xhr.open('POST', targetPHP+'?up=true&base64=true', true);
+					xhr.open('POST', targetPHP+'?up=true&base64=true&af='+file.name, true);
 					xhr.setRequestHeader('UP-FILENAME', file.name);
 					xhr.setRequestHeader('UP-SIZE', file.size);
 					xhr.setRequestHeader('UP-TYPE', file.type);
@@ -80,14 +80,14 @@ function uploader(place, status, targetPHP, show) {
 			}
 				
 			function previewer(event){
-			document.getElementById("lool").innerHTML = "woop woop";
+			var filename = encodeURI(file.name);
+			document.getElementById("lool").innerHTML = "woop woop"+file.name;
 				
 				bin = preview.result;
 				var img = document.createElement("img"); 
 				img.className = 'addedIMG';
 			    img.file = file;   
 			    /* img.src = bin; */
-				var filename = encodeURI(file.name);
 				var fnoext = filename.substr(0, filename.length-3);
 				img.src = staticness+"/uploads/"+fnoext+"png";
 				document.getElementById(show).appendChild(img);

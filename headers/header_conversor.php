@@ -1,4 +1,4 @@
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
     <title>HTML5</title>
 	<style>
 	body {
@@ -45,4 +45,4 @@
 	}
 	</style>
 	<script whatever="this is a config js file" src="/config/config.js"></script>
-	<script src="/js/html5uploader.js"></script>
+	<script src="/js/html5uploader.js" charset="UTF-8"></script>

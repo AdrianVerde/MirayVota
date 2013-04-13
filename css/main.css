@@ -231,6 +231,16 @@ font-family: 'Merriweather Sans', sans-serif;
 width:120px;
 }
 
+.partythumb {
+display: block;
+padding: 4px;
+line-height: 20px;
+border: none;
+-webkit-box-shadow: none;
+Unknown property name.-moz-box-shadow: none;
+box-shadow: none;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
