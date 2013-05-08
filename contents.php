@@ -1,22 +1,22 @@
 <?php
 function content_index(){
-	require_once("contents/index.php");
+	require_once("contents/content_index.php");
 }
 
 function content_partidos(){
-	require_once("contents/parties.php");
+	require_once("contents/content_parties.php");
 }
 
 function content_promesas(){
-	require_once("contents/promises.php");
+	require_once("contents/content_promises.php");
 }
 
 function content_about(){
-	require_once("contents/about.php");
+	require_once("contents/content_about.php");
 }
 
 function content_conversor(){
-	require_once("contents/conversor.php");
+	require_once("contents/content_conversor.php");
 }
 
 function content_typical(){
