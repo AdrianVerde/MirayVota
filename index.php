@@ -13,7 +13,8 @@ $static_host = STATIC_HOST;
 
 function get_header(){
 if(isset($_GET['a'])){
-switch ($_GET['a']) {
+$dir = strtolower($_GET['a']);
+switch ($dir) {
     case "partidos":
 		//Lista de partidos ordenada por número de votos de forma predeterminada
 		header_partidos();
@@ -58,7 +59,8 @@ switch ($_GET['a']) {
 
 function nav(){
 if(isset($_GET['a'])){
-switch ($_GET['a']) {
+$dir = strtolower($_GET['a']);
+switch ($dir) {
     case "partidos":
 		//Lista de partidos ordenada por número de votos de forma predeterminada
 		nav_partidos();
@@ -105,7 +107,8 @@ switch ($_GET['a']) {
 function content(){
 global $banana;
 if(isset($_GET['a'])){
-switch ($_GET['a']) {
+$dir = strtolower($_GET['a']);
+switch ($dir) {
     case "partidos":
 		//Lista de partidos ordenada por número de votos de forma predeterminada
 		content_partidos();
@@ -152,7 +155,8 @@ switch ($_GET['a']) {
 function footer(){
 global $adrian_is_sexy;
 if(isset($_GET['a'])){
-switch ($_GET['a']) {
+$dir = strtolower($_GET['a']);
+switch ($dir) {
     case "partidos":
 		//Lista de partidos ordenada por número de votos de forma predeterminada
 		footer_partidos();
@@ -197,7 +201,8 @@ switch ($_GET['a']) {
 }
 function just_in_case(){
 if(isset($_GET['a'])){
-switch ($_GET['a']) {
+$dir = strtolower($_GET['a']);
+switch ($dir) {
 	case "conversor":
 		//Conversor de imágenes
         echo "<body onload=\"new uploader('drop', 'status', '/uploader.php', 'list');\">";
