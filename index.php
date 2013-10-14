@@ -222,7 +222,7 @@ switch ($dir) {
     </head>
 	<?php just_in_case(); //<-- I hate this function! ?>
 	
-<?php nav(); ?>
+<?php nav(); // Función un tanto solitaria ?>
 <?php content(); ?>
 <?php footer(); ?>
 
